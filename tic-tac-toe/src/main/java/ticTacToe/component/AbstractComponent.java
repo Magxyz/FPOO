@@ -74,7 +74,7 @@ public abstract class AbstractComponent implements Paintable {
 				if (!isOver(me.getPoint()))
 					return;
 
-				System.out.println("oiieee!");
+				onMouseClick(me);
 			}
 
 		};
@@ -91,4 +91,7 @@ public abstract class AbstractComponent implements Paintable {
 		};
 	}
 	
+	protected void onMouseClick(MouseEvent me) {
+		//the standard behavior is to do nothing
+	}
 }
